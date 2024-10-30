@@ -1,0 +1,212 @@
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&display=swap');
+
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Playfair Display', serif;
+    background-color: #ffffff;
+    color: #000000;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #000000;
+    padding: 30px 20px;
+    color: #ffffff;
+}
+
+.menu-icon, .nav-icons {
+    display: flex;
+    align-items: center;
+}
+
+.menu-icon {
+    gap: 10px;
+}
+
+.icon {
+    width: 40px;
+    height: auto;
+}
+
+.nav-icons a {
+    margin-left: 15px;
+    position: relative;
+}
+
+.cart-icon .cart-count {
+    background-color: blue;
+    color: white;
+    border-radius: 50%;
+    padding: 2px 6px;
+    font-size: 12px;
+    position: absolute;
+    top: -10px;
+    right: -10px;
+}
+
+.Cervezas-title {
+    font-size: 50px;
+    color: #000000;
+    text-align: center;
+    margin: 20px 0;
+}
+
+#Cervezas {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding: 20px;
+    background-color: #ffffff;
+}
+
+.Cerveza {
+    width: 250px;
+    margin: 20px;
+    padding: 15px;
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    text-align: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.2s, box-shadow 0.2s;
+}
+
+.Cerveza:hover {
+    transform: scale(1.05);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+.Cerveza img {
+    width: 150px;
+    height: auto;
+    margin-bottom: 10px;
+}
+
+.Cerveza h3 {
+    font-size: 20px;
+    color: #000000;
+    margin: 10px 0;
+}
+
+.Cerveza p {
+    color: #666;
+    font-size: 14px;
+    margin-bottom: 8px;
+}
+
+button {
+    background-color: #f3f7fe;
+    color: #3b82f6;
+    border: none;
+    cursor: pointer;
+    border-radius: 8px;
+    width: 100px;
+    height: 45px;
+    transition: 0.3s;
+}
+
+button:hover {
+    background-color: #3b82f6;
+    box-shadow: 0 0 0 5px #3b83f65f;
+    color: #fff;
+}
+
+.Ayudarte {
+    background-color: #000;
+    color: #fff;
+    padding: 40px 20px;
+    text-align: center;
+}
+
+.contact-options {
+    display: flex;
+    justify-content: center;
+    gap: 50px;
+    margin-top: 30px;
+}
+
+.Numero img {
+    width: 70px;
+    height: auto;
+    margin-bottom: 10px;
+}
+
+footer {
+    background-color: #ffffff;
+    color: #000;
+    padding: 20px;
+    text-align: center;
+    border-top: 1px solid #ddd;
+}
+
+footer p {
+    font-weight: bold;
+}
+
+footer .social-media a {
+    margin: 0 10px;
+    display: inline-block;
+}
+
+.card {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 500px;
+    padding: 10px 15px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    background-color: #ffffff;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+    font-family: Arial, sans-serif;
+}
+
+.text-container {
+    display: flex;
+    flex-direction: column;
+}
+
+.subtitle {
+    font-size: 15px;
+    color: #888;
+    margin: 0;
+}
+
+.title {
+    font-size: 30px;
+    color: #000;
+    font-weight: bold;
+    margin: 0;
+}
+
+.info-section2 h2 {
+    font-size: 2em;
+    color: #000000;
+    font-weight: bold;
+}
+
+.info-section2 ul li {
+    font-size: 1.2em;
+    margin-bottom: 30px;
+    font-weight: bold;
+}
+
+[data-aos] {
+    transition: opacity 0.6s ease, transform 0.6s ease;
+}
+
+@media (max-width: 600px) {
+    .Cerveza {
+        width: 45%;
+        margin: 10px;
+    }
+}
